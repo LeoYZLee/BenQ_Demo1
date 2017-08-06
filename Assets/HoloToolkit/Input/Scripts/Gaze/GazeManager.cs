@@ -91,7 +91,6 @@ namespace HoloToolkit.Unity.InputModule
         /// Unity UI pointer event.  This will be null if the EventSystem is not defined in the scene.
         /// </summary>
         public PointerEventData UnityUIPointerEvent { get; private set; }
-        public bool Hit { get; internal set; }
 
         /// <summary>
         /// Cached results of racast results.

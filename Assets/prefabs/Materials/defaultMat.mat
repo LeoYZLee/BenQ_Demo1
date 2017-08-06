@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: defaultMat
-  m_Shader: {fileID: 4800000, guid: 758ba4ebefc2eee41a60d42b35aff107, type: 3}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: 4800000, guid: 5f798bc89d23aaa43bc6d51e147b544a, type: 3}
+  m_ShaderKeywords: _USEMAINTEX_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_CustomRenderQueue: -1
@@ -37,6 +37,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,9 +59,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
+    - _ColorWriteMask: 15
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Falloff_Dst_Max: 6
+    - _Falloff_Dst_Min: 2
+    - _Falloff_Scale: 0.5
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Mode: 0
@@ -65,7 +74,15 @@ Material:
     - _Parallax: 0.02
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UseBumpMap: 0
+    - _UseColor: 0
+    - _UseEmissionTex: 0
+    - _UseMainTex: 1
+    - _WireThickness: 100
+    - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _WireColor: {r: 1, g: 1, b: 1, a: 1}
